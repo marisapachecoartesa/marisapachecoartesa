@@ -25,3 +25,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.conteiner {
+  padding: 0 64px 0 64px;
+}
+
+@media only screen and (max-width: 640px) {
+  .conteiner {
+    padding: 0 24px 0 24px;
+  }
+}
