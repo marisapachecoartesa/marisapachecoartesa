@@ -6,21 +6,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Header() {
     return(
-        <nav className="w-full fixed z-50 container bg-primary text-white text-xl overflow-hidden md:rounded md:mt-4">
-            <ul className="flex justify-around items-center p-8">
+        <nav className="w-full fixed z-50 container bg-primary text-white text-lg overflow-hidden rounded-b-2xl md:rounded-xl md:mt-4">
+            <ul className="flex justify-between items-center py-8 px-5 md:px-20">
                 <li className='hover:scale-110 transition'>
                     <Link href="/">
-                        <Image src={"/next.svg"} alt={"Logo"} width={100} height={50} />
-                    </Link>
-                </li>
-                <li className='hover:underline'>
-                    <Link href="/sobre">
-                        Sobre
-                    </Link>
-                </li>
-                <li className='hover:underline'>
-                    <Link href="/artes">
-                        Artes
+                        <Image src={"/logo.png"} alt={"Logo"} width={200} height={50} />
                     </Link>
                 </li>
                 <li className='hover:underline'>
