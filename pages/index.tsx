@@ -8,6 +8,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -53,71 +54,80 @@ export default function Home() {
         <Swiper {...swiperOptions} className="cursor-default">
               <SwiperSlide>
                 <Image 
-                  className='w-full md:w-auto aspect-[3/4] object-cover object-center overflow-hidden' 
+                  className='w-full md:w-auto md:m-auto aspect-[3/4] object-cover object-center overflow-hidden' 
                   src={"/img.jpeg"} 
                   alt={"Arte 1"} 
                   width={300} 
                   height={300} 
+                  quality={80}
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className='w-full md:w-auto aspect-[3/4] object-cover object-center overflow-hidden'
+                  className='w-full md:w-auto md:m-auto aspect-[3/4] object-cover object-center overflow-hidden'
                   src={"/img (1).jpeg"}
                   alt={"Arte 2"}
                   width={300}
                   height={300}
+                  quality={80}
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className='w-full md:w-auto aspect-[3/4] object-cover object-center overflow-hidden'
+                  className='w-full md:w-auto md:m-auto aspect-[3/4] object-cover object-center overflow-hidden'
                   src={"/img (2).jpeg"}
                   alt={"Arte 3"}
                   width={300}
                   height={300}
+                  quality={80}
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className='w-full md:w-auto aspect-[3/4] object-cover object-center overflow-hidden'
+                  className='w-full md:w-auto md:m-auto aspect-[3/4] object-cover object-center overflow-hidden'
                   src={"/img (3).jpeg"}
                   alt={"Arte 4"}
                   width={300}
                   height={300}
+                  quality={80}
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className='w-full md:w-auto aspect-[3/4] object-cover object-center overflow-hidden'
+                  className='w-full md:w-auto md:m-auto aspect-[3/4] object-cover object-center overflow-hidden'
                   src={"/img (4).jpeg"}
                   alt={"Arte 5"}
                   width={300}
                   height={300}
+                  quality={80}
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className='w-full md:w-auto aspect-[3/4] object-cover object-center overflow-hidden'
+                  className='w-full md:w-auto md:m-auto aspect-[3/4] object-cover object-center overflow-hidden'
                   src={"/img (5).jpeg"}
                   alt={"Arte 6"}
                   width={300}
                   height={300}
+                  quality={80}
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  className='w-full md:w-auto aspect-[3/4] object-cover object-center overflow-hidden'
+                  className='w-full md:w-auto md:m-auto aspect-[3/4] object-cover object-center overflow-hidden'
                   src={"/img (6).jpeg"}
                   alt={"Arte 7"}
                   width={300}
                   height={300}
+                  quality={80}
                 />
               </SwiperSlide>
               <button className="swiper-button-prev !w-[10%] !hidden md:!flex" />
               <button className="swiper-button-next !w-[10%] !hidden md:!flex" />
             </Swiper>
       </div>
+
+      <Link className='mb-6 underline' href="/portfolio">Ver tudo</Link>
 
       <Footer />
     </main>
